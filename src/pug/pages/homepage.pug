@@ -1,0 +1,79 @@
+-
+
+    //- ::: Variables PUG ::: -//
+
+    let base = '';
+
+
+//- ::: Include Head & Body ::: -//
+include ../includes/head
+
+<!-- AlpineJS -->
+<script src="//unpkg.com/alpinejs" defer></script>
+
+
+<section class="slide fade-4" data-title="Homepage" data-name="homepage">
+    <div class="content">
+        <div class="container">
+            <div class="wrap">
+
+
+                <ul class="flex">
+
+                    <li class="fix-5-12 margin-top-desktop-20 margin-top-10 margin-bottom-6">
+
+
+                        <h3 class="smaller roboto weight-9 margin-top-desktop-2" style="line-height: .9em;"  >Cafetería y Pastelería</h3>
+
+                        <h2 class="h1 largest roboto weight-9 margin-top-1" style="line-height: .9em;" >El Embeleco</h2>
+
+                        <div style="margin: 0 80px">
+
+                            <p class="smaller weight-6 margin-top-1" id="cities">
+
+
+                            </p>
+
+                        </div>
+
+
+                        <a href="https://api.whatsapp.com/send?phone=#{ whatsapp_number }&text=¡Hola%20!,%20Tengo%20algunas%20dudas%20¿me%20podrían%20asesorar?%20😊" class="button small green rounded crop margin-bottom-1 margin-right-1" ><span class='material-icons relative md-24' style="left: -2px; top: 1px">whatsapp</span>Contáctame por WhatsApp</a>
+
+
+                    </li>
+
+
+                    <li class="fix-4-12">
+
+
+                        <div class="pad padding-top-3 shadow selected">
+
+
+                            <h6 class="largest roboto weight-9 opacity-8 padding-top-2" style="line-height: .9em" >Para encargar una torta, por favor llena el formulario</h6>
+                            <h6 class="smaller weight-6 margin-bottom-1 opacity-8" >Seleccione 1 opción</h6>
+
+                            +form_personalized_attention()
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="background youtube" style="background-image:url(https://i.ytimg.com/vi/UxwscVIZ8Qg/hqdefault.jpg);" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=F4eaBfzjJjM', containment:'self', startAt: 1, stopAt: 26, showControls:false, autoPlay:true, loop:true, mute:true, opacity:5, quality:'highres', stopMovieOnBlur:false, remember_last_time: true}"></div>
+
+
+
+</section>
+
+
+//- :::  Section of Plugins in this Page ::: -//
++background_youtube()
+
+//- :::  Star Footer Content ::: -//
+include ../includes/footer
